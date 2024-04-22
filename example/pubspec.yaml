@@ -4,8 +4,8 @@ version: 1.0.0
 publish_to: none
 
 environment:
-  sdk: '>=3.3.0 <4.0.0'
-  flutter: ">=3.19.0"
+  sdk: '>=3.2.5 <4.0.0'
+  flutter: ">=3.16.8"
 
 dependencies:
   chewie:
@@ -13,7 +13,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  video_player: any
+  cached_video_player_plus: any
 dev_dependencies:
   flutter_test:
     sdk: flutter

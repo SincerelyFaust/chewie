@@ -1,6 +1,6 @@
+import 'package:cached_video_player_plus/cached_video_player_plus.dart';
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
-import 'package:video_player/video_player.dart';
 
 class VideoProgressBar extends StatefulWidget {
   VideoProgressBar(
@@ -15,7 +15,7 @@ class VideoProgressBar extends StatefulWidget {
     required this.drawShadow,
   }) : colors = colors ?? ChewieProgressColors();
 
-  final VideoPlayerController controller;
+  final CachedVideoPlayerPlusController controller;
   final ChewieProgressColors colors;
   final Function()? onDragStart;
   final Function()? onDragEnd;
@@ -42,7 +42,7 @@ class _VideoProgressBarState extends State<VideoProgressBar> {
 
   Offset? _latestDraggableOffset;
 
-  VideoPlayerController get controller => widget.controller;
+  CachedVideoPlayerPlusController get controller => widget.controller;
 
   @override
   void initState() {
@@ -135,7 +135,7 @@ class StaticProgressBar extends StatelessWidget {
   });
 
   final Offset? latestDraggableOffset;
-  final VideoPlayerValue value;
+  final CachedVideoPlayerPlusValue value;
   final ChewieProgressColors colors;
 
   final double barHeight;
@@ -177,7 +177,7 @@ class _ProgressBarPainter extends CustomPainter {
     required this.draggableValue,
   });
 
-  VideoPlayerValue value;
+  CachedVideoPlayerPlusValue value;
   ChewieProgressColors colors;
 
   final double barHeight;
