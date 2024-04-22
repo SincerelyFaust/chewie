@@ -13,7 +13,7 @@ dependencies:
     sdk: flutter
   provider: ^6.1.2
   cached_video_player_plus: ^2.0.0
-  wakelock_plus: ^1.1.6
+  wakelock_plus: 1.1.6
 
 dev_dependencies:
   flutter_test:
